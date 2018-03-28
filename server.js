@@ -13,6 +13,10 @@ app.get('/article-one', function (req, res) {
   res.send('Article one requested');
 });
 
+app.get('/article-two', function (req, res) {
+  res.send('Article two requested and is shown');
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
